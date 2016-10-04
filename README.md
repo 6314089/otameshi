@@ -22,16 +22,28 @@ SourceTreeはGitをGUIで扱うアプリケーション．
 これを使えばGitについてよく分かっていなくても，割りとなんとかなるかも．
 
 ##使い方
+###SourceTreeのインストール
 SourceTreeのインストールをしてください．
 途中でAtlassianのアカウントを作る必要があるかもしれません．
 インストール中にbitbucketやGitHubのアカウントやリポジトリを追加する部分があるかもしれませんが，一旦スキップして後から追加することにします．
+インストールは[このページ](http://nelog.jp/sourcetree)あたりでも参考にしてください．
 
+###GitHubアカウントの作成
 GitHubのアカウントも作成してください．
 GitHubのアカウントを作成したらSlackの方でアカウント名を教えて下さい．
 リポジトリへの書き込み権を付与します．
+GitHubでは自分の作成したリポジトリ以外にはデフォルトでは書き込みできません．
+リポジトリの管理者が書き込みの許可を与える必要があるようです．
+
+###SourceTreeとGitHubの連携
+SourceTreeでGitHubとやりとりをするにはsshの設定が必要なようです．
+以下のあたりのページを参考になんとかしてください．
+- [SourceTreeでリモートリポジトリ（GitHub）にプッシュするための設定方法 ](http://nelog.jp/sourcetree-github-settings)
+- [SourceTreeとGitHub間のSSH認証がうまくいかない場合に試しておきたいこと](http://azunobu.hatenablog.com/entry/2015/08/06/201449)
 
 SourceTreeが用意し終わり，GitHubのアカウントも作成して書き込み権を手に入れたら，SourceTreeを立ち上げましょう．
 
+なにかうまくいかないことがあったらSlack上で質問してくれれば誰かに手助けしてもらえるかもしれません．
 
 クローンする．
 
