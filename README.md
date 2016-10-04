@@ -1,0 +1,2 @@
+# otameshi
+GitHubお試しのリポジトリ
