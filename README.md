@@ -12,7 +12,7 @@ Gitが動画ファイルでGitHubがYoutubeみたいな感じ？
 
 ##Gitについて
 GitHubをつかうにはGitが使えなければならない．
-Gitの使い方は[こちら](https://git-scm.com/book/ja/v2)でダウンロードできる電子書籍を読めばGitについては理解できるはず．
+Gitの使い方は[こちら](https://git-scm.com/book/ja/v2)でダウンロードできる電子書籍を読めば理解できるはず．
 
 ##SourceTree
 ![SourceTree](images/sourceTree.png)
