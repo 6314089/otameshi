@@ -32,7 +32,9 @@ GitHubでは自分の作成したリポジトリ以外にはデフォルトで�
 ###SourceTreeのインストール
 SourceTreeのインストールをしてください．
 途中でAtlassianのアカウントを作る必要があるかもしれません．
-インストールは[このページ](http://nelog.jp/sourcetree)あたりでも参考にしてください．
+インストールは以下のページあたりでも参考にしてください．
+- [Gitを視覚的に操作できる「SourceTree」のインストール方法 ](http://nelog.jp/sourcetree)
+- [SourceTree for Mac インストールから初期設定の手順](http://glatchdesign.com/blog/web/tools/770)
 GitHubのアカウントを登録しておくといいのかもしれません．
 ここで登録しなくてもなんとかなるようですが．
 
