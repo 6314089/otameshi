@@ -163,11 +163,11 @@ PRを出さなくても作業用ブランチをmasterに合流させることは
 
 ####PRの出し方
 GitHub上で現在のブランチがmasterであることを確認して，New pull requestボタンを押しましょう．
-![GitHubを確認する](images/img21.png)
+![New pull requestを押す](images/img21.png)
 
 その次の画面では自分の作業用ブランチを選択します．
 「この選択したブランチをmasterに合流してほしい」というリクエストを出すことになります．
-![GitHubを確認する](images/img22.png)
+![自分のブランチを選ぶ](images/img22.png)
 
 次にPRの名前と説明を追加します．
 
@@ -177,61 +177,61 @@ wipがついていないブランチは，作業が完了しているものと�
 作業が終了した段階でこのwipを外すことになります．
 
 名前と説明を追加し終えたら，Create pull requestボタンを押しましょう．
-![GitHubを確認する](images/img23.png)
+![名前と説明を書いてCreate pull request](images/img23.png)
 
 自分で作成したり変更加えたりした直後のブランチならば，GitHubの上の方に表示されていることが有ります．こちらを利用したほうがお手軽にPRを作れるので，下のように表示されているときは，赤丸で囲ってあるボタンを押しましょう．
-![GitHubを確認する](images/img24.png)
+![お手軽にpull request](images/img24.png)
 
 Create pull requestボタンを押すとPRが作成されます．
 作成されたPRは以下のような画面になっています．
-![GitHubを確認する](images/img25.png)
+![個別PR画面](images/img25.png)
 
 ###作業をすすめる
 PRを作成し終わったら実際に作業を進めていきましょう．
 先ほど作成したテキストファイルに適当な文字を書いて保存してみます．
-![GitHubを確認する](images/img26.png)
+![テキストを編集](images/img26.png)
 
 上書き保存を行うと，SourceTreeの方で「コミットされていない変更があります」と表示されます．またコミットを行いましょう．
-![GitHubを確認する](images/img27.png)
+![コミットされていない変更があります](images/img27.png)
 
 自分が作業用のブランチにいることを確認して，編集したファイルをステージングしてコミットボタンを押します．
-![GitHubを確認する](images/img28.png)
+![コミットをする](images/img28.png)
 
 コミットメッセージを書いてコミットを完了させましょう．
-![GitHubを確認する](images/img29.png)
+![コミットをする](images/img29.png)
 
 コミットを終えると，GitHub上にあるものよりも自分のローカルにあるものが一つだけコミットが進んだ状態になります．自分のローカルの変更をGitHubの方に反映させるためにpushをしましょう．
-![GitHubを確認する](images/img30.png)
+![プッシュする](images/img30.png)
 
 プッシュを終えるとPRの画面の方にコミットが追加されます．
 wipでPRを作っておけば，他の人がPR一覧からPRのページに飛ぶことで，その作業の様子をGitHub上で確認できるようになります．
-![GitHubを確認する](images/img31.png)
+![プッシュが反映される](images/img31.png)
 
 コミットは1つずつプッシュする必要はありません．いくつかまとめてプッシュをすることもできます．
 こまめにプッシュをしたほうがGitHub上で表示される作業履歴と実際の作業履歴の差が少なくはなりますが．
-![GitHubを確認する](images/img32.png)
+![まとめてプッシュする](images/img32.png)
 
 個別のPRの画面ではコメントを追加することができます．
 他人の作業についてコメントを残したい場合とかに使っていきましょう．
 議論が長くなる場合はSlackの方でやってもいいかもしれませんが．
-![GitHubを確認する](images/img33.png)
+![PR画面でコメントを書く](images/img33.png)
 
-![GitHubを確認する](images/img34.png)
+![PR画面でコメントを書く](images/img34.png)
 
 コミットをクリックすることで，各コミットの個別のページに移動できます．
-![GitHubを確認する](images/img35.png)
+![コミットをクリック](images/img35.png)
 
-![GitHubを確認する](images/img36.png)
+![コミット画面](images/img36.png)
 
 この画面では，ソースコードの行を指定して，その行に対してコメントをつけることができます．
 
 コメント追加の横の隣のレビューというボタンはレビュー機能みたいです．
 レビューを受けるまでマージできないようにするとかそういった機能のようです．詳しくは[こちら](http://qiita.com/terra_yucco/items/fa08bd2a4b498963a313)や[こちら](http://qiita.com/edwardkenfox/items/6340715d84f180832978)など．
 この機能は使うほどでもないのかなと思っていますが．
-![GitHubを確認する](images/img37.png)
+![行コメント](images/img37.png)
 
 行に対してコメントを付けたときのPRページの様子です．
-![GitHubを確認する](images/img38.png)
+![PR画面での行コメント](images/img38.png)
 
   ->作業をしたらaddしてcommitしてpushする．
   ->プルリクエストのページではみんながコメントをつけたりとかできる
