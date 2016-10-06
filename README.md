@@ -233,6 +233,23 @@ wipでPRを作っておけば，他の人がPR一覧からPRのページに飛�
 行に対してコメントを付けたときのPRページの様子です．
 ![PR画面での行コメント](images/img38.png)
 
+###作業完了したらマージする
+![](images/img39.png)
+![](images/img40.png)
+![](images/img41.png)
+![](images/img42.png)
+![](images/img43.png)
+![](images/img44.png)
+![](images/img45.png)
+![](images/img46.png)
+![](images/img47.png)
+![](images/img48.png)
+![](images/img49.png)
+![](images/img50.png)
+![](images/img51.png)
+![](images/img52.png)
+
+
   ->作業をしたらaddしてcommitしてpushする．
   ->プルリクエストのページではみんながコメントをつけたりとかできる
     ->周りのメンバーが作業の様子を知ることができる
