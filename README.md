@@ -286,6 +286,20 @@ masterブランチにいることを確認して，「add_text_file」の上で�
 
 プルとフェッチの違いや「origin/add_text_file」と「add_text_file」の違い，そもそも「origin」とは何かなどが気になる人は各自Gitを勉強してください．割とややこしいので別に調べなくても何とかなるかもしれません．
 
+###マージできないとき
+![](images/img53.png)
+![](images/img54.png)
+![](images/img55.png)
+![](images/img56.png)
+![](images/img57.png)
+![](images/img58.png)
+![](images/img59.png)
+![](images/img60.png)
+![](images/img61.png)
+![](images/img62.png)
+![](images/img63.png)
+
+
   ->マージできないときはmasterがブランチを切ったときより進んでいる場合
     ->masterを取り込んで，再度マージをする
     ->基本的にみんなバラバラのファイルを扱っていて，複数人で同じファイルを編集することはないだろうから，このような事態になることは少ないかもしれない．
