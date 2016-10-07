@@ -342,8 +342,34 @@ GitHub上で「Merge pull request」ボタンが押せるようになりまし�
 複数人で同じファイルを同時に編集したりしなければ，こんな面倒なことにはならないと思います．
 
 ###README.mdについて
-![](images/img64.png)
-![](images/img65.png)
-![](images/img66.png)
-![](images/img67.png)
-![](images/img68.png)
+README.mdはGitHub上で特別な扱いのファイルです．
+フォルダの中にREADME.mdファイルが存在すると，そのファイルの中身をGitHub上でいい感じに表示してくれるようになっています．
+
+実際にREADME.mdファイルを作成してみましょう．
+
+今までと同じように作業用ブランチを作成し作業を進めていきましょう．
+
+まずフォルダを作成します．
+作業用フォルダ内に自分のアカウント名のフォルダを作成しましょう．
+![アカウント名のフォルダ作成](images/img64.png)
+
+そのフォルダの中に「README.md」と言う名前のファイルを作成します．
+![README.md追加](images/img65.png)
+
+README.mdと言うのはマークダウンファイルです．
+
+マークダウンの表記方法については以下のページなどを参考にしてください．マークダウンについてはネット上にたくさん解説があると思うので各自調べてください．
+- [
+README.mdファイル。マークダウン記法まとめ](http://codechord.com/2012/01/readme-markdown/)
+- [翻訳 GitHub Help - GitHub Flavored Markdown](http://qiita.com/qurage/items/a2f3f52c60d7c64b2e08)
+- [Markdownで行こう！ ](https://gist.github.com/wate/7072365)
+- [文章作成やメモ書きにも便利、Markdown記法](http://kojika17.com/2013/01/starting-markdown.html)
+
+何かマークダウン記法で書いてコミットしてプッシュしてみてください．
+![コミットをした](images/img66.png)
+
+GitHub上でフォルダが追加されているのが確認できます．
+![GitHub上](images/img67.png)
+
+フォルダの中を見るとREADME.mdで書いた内容がいい感じに整形されて表示されていると思います．
+![いい感じにREADME.mdの内容が表示](images/img68.png)
