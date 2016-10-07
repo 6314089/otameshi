@@ -234,28 +234,58 @@ wipでPRを作っておけば，他の人がPR一覧からPRのページに飛�
 ![PR画面での行コメント](images/img38.png)
 
 ###作業完了したらマージする
-![](images/img39.png)
-![](images/img40.png)
-![](images/img41.png)
-![](images/img42.png)
-![](images/img43.png)
-![](images/img44.png)
-![](images/img45.png)
-![](images/img46.png)
-![](images/img47.png)
-![](images/img48.png)
-![](images/img49.png)
-![](images/img50.png)
-![](images/img51.png)
-![](images/img52.png)
+作業が完了したらwipを外します．
+EditをクリックしPRのタイトルからwipを取り除いて保存しましょう．
+![Editを取り除く](images/img39.png)
 
+![wipを消して保存する](images/img40.png)
 
-  ->作業をしたらaddしてcommitしてpushする．
-  ->プルリクエストのページではみんながコメントをつけたりとかできる
-    ->周りのメンバーが作業の様子を知ることができる
-    ->作業中の段階から周りにコメントを貰うことができるので，作業中の段階からプルリクを出す．
-  ->作業が終わったら[wip]を外す
-->[wip]が外れたブランチはマージする
+本来ならばwipを外した人とマージする人は別人にするべきです．そうすることで作業した人と別の人が確認をしてからマージすることになるので，バグを防いだりできます．が，今回はそこまでする必要もないので，自分の作業用ブランチは自分で処理してしまいましょう．
+
+これからwipを外した作業用ブランチをマージしていきます．
+「Merge pull request」ボタンをクリックしましょう．
+![Merge pull requestをクリック](images/img41.png)
+
+マージコミットのメッセージを入力して「Confirm merge」をクリックしましょう．
+![Confirm mergeをクリック](images/img42.png)
+
+作業用ブランチをmasterに合流させることに成功したので，もう作業用ブランチは必要ありません．PR画面でマージを終えるとご丁寧にブランチ削除のボタンが表示されます．「Delete branch」をクリックしましょう．
+![Delete branchをクリック](images/img43.png)
+
+ブランチが削除されました．
+![ブランチが削除された](images/img44.png)
+
+マージとブランチの削除をGitHub上で行ったので，ローカルの方ではまだブランチの合流も削除もされていない状況になっています．SourceTreeに表示されているローカルの方をGitHubに同期していきましょう．
+
+まずはmasterブランチの方に移ります．「master」をダブルクリックしましょう．
+![masterをダブルクリック．](images/img45.png)
+
+masterブランチに移ったことを確認します．
+![masterブランチに移った](images/img46.png)
+
+masterに移ったらプルをします．プルをクリックします．
+![プルをクリックする](images/img47.png)
+
+okを押します．
+![okを押す](images/img48.png)
+
+するとローカルの方でも作業用ブランチがmasterにマージされた状況になります．
+![マージされた](images/img49.png)
+
+次にフェッチも行います．フェッチをするとGitHub上の他の人のブランチの情報とか，GitHub上で削除したブランチの情報を持ってくることができます．
+![フェッチする](images/img50.png)
+
+![フェッチする](images/img51.png)
+
+これでGitHubの作業用ブランチが削除されたことがローカルの方に反映されたので，「origin/add_text_file」ブランチは消えています．
+最後にローカル専用のoriginのついていない「add_text_file」を削除します．
+
+masterブランチにいることを確認して，「add_text_file」の上で右クリックして「add_text_fileを削除」を選びます．
+これで一通りマージが完了しました．
+![ローカルのブランチを削除](images/img52.png)
+
+プルとフェッチの違いや「origin/add_text_file」と「add_text_file」の違い，そもそも「origin」とは何かなどが気になる人は各自Gitを勉強してください．割とややこしいので別に調べなくても何とかなるかもしれません．
+
   ->マージできないときはmasterがブランチを切ったときより進んでいる場合
     ->masterを取り込んで，再度マージをする
     ->基本的にみんなバラバラのファイルを扱っていて，複数人で同じファイルを編集することはないだろうから，このような事態になることは少ないかもしれない．
